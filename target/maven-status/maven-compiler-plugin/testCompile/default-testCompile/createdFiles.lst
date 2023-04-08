@@ -1,0 +1,13 @@
+org\example\Pages\P03_search.class
+org\example\stepDefinitions\TC02_currency.class
+org\example\Pages\P04_hover.class
+org\example\hero_loginTCs.class
+org\example\stepDefinitions\TC04_hover.class
+org\example\Pages\P01_login.class
+org\example\stepDefinitions\TC01_login.class
+org\example\Pages\P00_Register.class
+org\example\stepDefinitions\TC03_search.class
+org\example\stepDefinitions\Hooks.class
+org\example\stepDefinitions\TC00_Register.class
+org\example\testRunner\Runner.class
+org\example\Pages\P02_currency.class

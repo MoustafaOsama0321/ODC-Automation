@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="12" time="246.141">
+<testcase classname="register users could register with all valid data" name="register with  all valid data" time="29.324">
+<system-out><![CDATA[Given navigate to url website...............................................passed
+And press on register button................................................passed
+And enter first name and last name..........................................passed
+And enter email field.......................................................passed
+And enter Password fields...................................................passed
+And enter Confirm password..................................................passed
+And enter click on register button..........................................passed
+Then verify that user entered to the page successfully......................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login_ user could login to the system with valid account" name="valid login" time="23.085">
+<system-out><![CDATA[Given navigate to url website...............................................passed
+And Go to login page........................................................passed
+When Enter valid email and password.........................................passed
+And Click on login button...................................................passed
+Then verify that user logged in successfully................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login_ user could login to the system with valid account" name="invalid login" time="18.424">
+<system-out><![CDATA[Given navigate to url website...............................................passed
+And Go to login page........................................................passed
+When Enter invalid email and password.......................................passed
+And Click on login button...................................................passed
+Then verify that user didn't logged in successfully.........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login_ user could login to the system with valid account" name="empty login" time="14.224">
+<system-out><![CDATA[Given navigate to url website...............................................passed
+And Go to login page........................................................passed
+When Don't enter email and password.........................................passed
+And Click on login button...................................................passed
+Then Unsuccessfully Login...................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Switching Currency To Euro" name="changing the currency from UsDollar To Euro" time="17.767">
+<system-out><![CDATA[Given navigate to url website...............................................passed
+And Go to login page........................................................passed
+When Enter valid email and password.........................................passed
+And Click on login button...................................................passed
+When click on the currency box and choose euro..............................passed
+Then see euro on products successfully......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User searchers for elements" name="user could se arch using variables" time="18.52">
+<failure message="The following asserts failed:&#10;&#9;expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[Given navigate to url website...............................................passed
+And Go to login page........................................................passed
+When Enter valid email and password.........................................passed
+And Click on login button...................................................passed
+Given User searches with "book".............................................passed
+And Search Show The Result For..............................................passed
+Then User See The Products "book"...........................................failed
+
+StackTrace:
+java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at org.example.stepDefinitions.TC03_search.TheProducts(TC03_search.java:32)
+	at ✽.User See The Products "book"(file:///C:/Users/Moustafa/IdeaProjects/Maven_ODC/src/main/resources/features/F03_Search.feature:11)
+]]></failure>
+</testcase>
+<testcase classname="User searchers for elements" name="user could se arch using variables 2" time="18.982">
+<system-out><![CDATA[Given navigate to url website...............................................passed
+And Go to login page........................................................passed
+When Enter valid email and password.........................................passed
+And Click on login button...................................................passed
+Given User searches with "laptop"...........................................passed
+And Search Show The Result For..............................................passed
+Then User See The Products "laptop".........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User searchers for elements" name="user could se arch using variables 3" time="22.725">
+<system-out><![CDATA[Given navigate to url website...............................................passed
+And Go to login page........................................................passed
+When Enter valid email and password.........................................passed
+And Click on login button...................................................passed
+Given User searches with "nike".............................................passed
+And Search Show The Result For..............................................passed
+Then User See The Products "nike"...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User searchers for elements" name="user could search for products using sku" time="24.628">
+<system-out><![CDATA[Given navigate to url website...............................................passed
+And Go to login page........................................................passed
+When Enter valid email and password.........................................passed
+And Click on login button...................................................passed
+When user searches with SerialNumber "SCI_FAITH"............................passed
+And Search Show The Result For..............................................passed
+Then User See The Products For SerialNumber "SCI_FAITH".....................passed
+]]></system-out>
+</testcase>
+<testcase classname="User searchers for elements" name="user could search for products using sku 2" time="22.025">
+<system-out><![CDATA[Given navigate to url website...............................................passed
+And Go to login page........................................................passed
+When Enter valid email and password.........................................passed
+And Click on login button...................................................passed
+When user searches with SerialNumber "APPLE_CAM"............................passed
+And Search Show The Result For..............................................passed
+Then User See The Products For SerialNumber "APPLE_CAM".....................passed
+]]></system-out>
+</testcase>
+<testcase classname="User searchers for elements" name="user could search for products using sku 3" time="16.626">
+<system-out><![CDATA[Given navigate to url website...............................................passed
+And Go to login page........................................................passed
+When Enter valid email and password.........................................passed
+And Click on login button...................................................passed
+When user searches with SerialNumber "SF_PRO_11"............................passed
+And Search Show The Result For..............................................passed
+Then User See The Products For SerialNumber "SF_PRO_11".....................passed
+]]></system-out>
+</testcase>
+<testcase classname="user hover on categories" name="User can hoover on different subcategories" time="18.83">
+<system-out><![CDATA[Given navigate to url website...............................................passed
+And Go to login page........................................................passed
+When Enter valid email and password.........................................passed
+And Click on login button...................................................passed
+When user select random one of the three main categories....................passed
+And user clicks on items from subcategories.................................passed
+Then user could hover on sub categories of the selected main category.......passed
+]]></system-out>
+</testcase>
+</testsuite>
